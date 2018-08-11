@@ -1,0 +1,32 @@
+Update-ExecutionPolicy Unrestricted
+Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
+cinst Microsoft-Hyper-V-All -source windowsFeatures
+cinst Microsoft-Windows-Subsystem-Linux -source windowsFeatures
+ 
+# Enable Windows Controlled Folder Access
+Set-MpPreference -EnableControlledFolderAccess Enabled
+ 
+ 
+cinst -y 7zip.install --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+cinst -y git.install  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+cinst -y notepadplusplus.install  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+cinst -y visualstudiocode --params '/NoDesktopIcon /NoQuicklaunchIcon'  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+cinst -y nuget.commandline  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+cinst -y sysinternals  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+cinst -y cmdermini  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+cinst -y linqpad  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+cinst -y googlechrome  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+cinst -y docker-for-windows  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+cinst -y postman  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+cinst -y wox  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+  
+# Visual Studio Code Extensions
+code --install-extension ms-vscode.csharp
+code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension PeterJausovec.vscode-docker
+code --install-extension ms-vscode.powershell
+code --install-extension esbenp.prettier-vscode
+code --install-extension eamodio.gitlens
+code --install-extension robertohuertasm.vscode-icons
+ 
+Install-WindowsUpdate -AcceptEula
