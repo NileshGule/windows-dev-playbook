@@ -10,6 +10,7 @@ Set-MpPreference -EnableControlledFolderAccess Enabled
 cinst -y 7zip.install --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 
 cinst -y adobereader-update --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+#cinst -y anaconda3 --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 #cinst -y azure-cli --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 
 cinst -y ccleaner  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
@@ -37,10 +38,13 @@ cinst -y keepass  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolate
 cinst -y linqpad  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 #cinst -y lockhunter  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 
+#cinst -y mobaxterm  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+
 cinst -y notepadplusplus.install  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 cinst -y nuget.commandline  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 
 cinst -y openssh  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+cinst -y openlivewriter  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 cinst -y postman  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 
 #cinst -y resharper-platform  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
@@ -48,9 +52,12 @@ cinst -y postman  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolate
 
 cinst -y sysinternals  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 cinst -y treesize  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+#cinst -y telegram.install  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+cinst -y todoist  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 
 cinst -y visualstudiocode --params '/NoDesktopIcon /NoQuicklaunchIcon'  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 
+cinst -y whatsapp  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 cinst -y winscp  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 cinst -y windirstat --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 #cinst -y wox  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
