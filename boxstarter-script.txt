@@ -38,6 +38,8 @@ cinst -y intellijidea-ultimate  --cacheLocation "$env:userprofile\AppData\Local\
 cinst -y jdk8  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 
 cinst -y keepass  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+cinst -y kubernetes-cli  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+cinst -y kubernetes-helm  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 
 cinst -y linqpad  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 cinst -y lockhunter  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
@@ -56,6 +58,9 @@ cinst -y resharper-ultimate-all  --cacheLocation "$env:userprofile\AppData\Local
 cinst -y rufus  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 
 cinst -y sysinternals  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+cinst -y skaffold  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+
+cinst -y terraform  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 cinst -y treesize  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 cinst -y telegram.install  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 cinst -y todoist  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
