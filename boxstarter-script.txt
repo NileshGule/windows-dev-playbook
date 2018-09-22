@@ -33,9 +33,10 @@ cinst -y github-desktop  --cacheLocation "$env:userprofile\AppData\Local\Temp\ch
 cinst -y googlechrome  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 cinst -y googledrive  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 
-cinst -y intellijidea-ultimate  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+#cinst -y intellijidea-ultimate  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 
 cinst -y jdk8  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+cinst -y jetbrainstoolbox  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 
 cinst -y keepass  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 cinst -y kubernetes-cli  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
@@ -53,8 +54,8 @@ cinst -y openssh  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolate
 cinst -y openlivewriter  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 cinst -y postman  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 
-cinst -y resharper-platform  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
-cinst -y resharper-ultimate-all  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+#cinst -y resharper-platform  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+#cinst -y resharper-ultimate-all  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 cinst -y rufus  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 
 cinst -y sysinternals  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
