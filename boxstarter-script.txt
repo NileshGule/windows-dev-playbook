@@ -12,6 +12,8 @@ cinst -y 7zip.install --cacheLocation "$env:userprofile\AppData\Local\Temp\choco
 cinst -y adobereader-update --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 cinst -y anaconda3 --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 cinst -y azure-cli --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+cinst -y AzureStorageExplorer --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+
 
 cinst -y babun --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 
@@ -72,6 +74,7 @@ cinst -y whatsapp  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolat
 cinst -y winscp  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 cinst -y windirstat --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 cinst -y wox  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+cinst -y zoomit --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
   
 # Visual Studio Code Extensions
 code --install-extension timonwong.ansible-autocomplete
