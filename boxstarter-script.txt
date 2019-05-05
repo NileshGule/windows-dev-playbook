@@ -31,6 +31,7 @@ cinst -y evernote  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolat
 cinst -y firefox  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 
 cinst -y git.install  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+cinst -y gitflow  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 cinst -y github-desktop  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 cinst -y googlechrome  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 cinst -y googledrive  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
