@@ -2,17 +2,18 @@ Update-ExecutionPolicy Unrestricted
 Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
 cinst Microsoft-Hyper-V-All -source windowsFeatures
 cinst Microsoft-Windows-Subsystem-Linux -source windowsFeatures
- 
+
 # Enable Windows Controlled Folder Access
 Set-MpPreference -EnableControlledFolderAccess Enabled
- 
- 
+
+
 cinst -y 7zip.install --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 
 cinst -y adobereader-update --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 cinst -y anaconda3 --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 cinst -y azure-cli --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 cinst -y AzureStorageExplorer --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
+cinst -y AquaSnap --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 
 
 cinst -y babun --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
@@ -76,7 +77,7 @@ cinst -y winscp  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey
 cinst -y windirstat --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 cinst -y wox  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 cinst -y zoomit --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
-  
+
 # Visual Studio Code Extensions
 code --install-extension timonwong.ansible-autocomplete
 code --install-extension coenraads.bracket-pair-colorizer
@@ -92,5 +93,5 @@ code --install-extension robertohuertasm.vscode-icons
 code --install-extension redhat.vscode-yaml
 
 code --install-extension wakatime.vscode-wakatime
- 
+
 Install-WindowsUpdate -AcceptEula
