@@ -1,0 +1,22 @@
+Import-Module posh-git
+Import-Module oh-my-posh
+Set-Theme Paradox
+
+#Hide username@domai
+$DefaultUser='Niles'
+
+#Helper function to change directory to developement workspace
+function cws { Set-Location C:\Nilesh\Projects }
+
+Import-Module PSReadLine
+
+# Shows navigable menu of all options when hitting Tab
+Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
+
+# Autocompleteion for Arrow keys
+Set-PSReadLineOption -HistorySearchCursorMovesToEnd
+Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
+Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
+
+Set-PSReadLineOption -ShowToolTips
+#Set-PSReadLineOption -PredictionSource History
