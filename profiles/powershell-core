@@ -3,12 +3,13 @@ Import-Module oh-my-posh
 Set-Theme Paradox
 
 #Hide username@domai
-$DefaultUser='Niles'
+$DefaultUser = 'Niles'
 
 #Helper function to change directory to developement workspace
 function cws { Set-Location C:\Nilesh\Projects }
 
 Import-Module PSReadLine
+Import-Module Az.Tools.Predictor
 
 # Shows navigable menu of all options when hitting Tab
 Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
@@ -19,11 +20,15 @@ Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 
 Set-PSReadLineOption -ShowToolTips
-Set-PSReadLineOption -PredictionSource History
+Set-PSReadLineOption -PredictionSource HistoryAndPlugin
+
+#Set the color for Prediction (auto-suggestion)
+Set-PSReadlineOption -Colors @{Prediction = 'DarkGreen' }
 
 Import-Module Get-ChildItemColor
 
-If (-Not (Test-Path Variable:PSise)) {  # Only run this in the console and not in the ISE
+If (-Not (Test-Path Variable:PSise)) {
+    # Only run this in the console and not in the ISE
     Import-Module Get-ChildItemColor
     
     Set-Alias l Get-ChildItem -option AllScope
