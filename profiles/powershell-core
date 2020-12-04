@@ -23,7 +23,7 @@ Set-PSReadLineOption -ShowToolTips
 Set-PSReadLineOption -PredictionSource HistoryAndPlugin
 
 #Set the color for Prediction (auto-suggestion)
-Set-PSReadlineOption -Colors @{Prediction = 'DarkGreen' }
+Set-PSReadlineOption -Colors @{InlinePrediction = [ConsoleColor]::DarkGreen }
 
 Import-Module Get-ChildItemColor
 
