@@ -277,7 +277,8 @@
                     "trailing_diamond": "\uE0B4",
                     "leading_diamond": " \uE0B6",
                     "properties": {
-                        "time_format": "15:04"
+                        "time_format": "15:04",
+                        "postfix": " \uf64f "
                     },
                     "type": "time"
                 }
