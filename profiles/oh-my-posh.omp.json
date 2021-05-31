@@ -2,7 +2,50 @@
     "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
     "blocks": [
         {
+            "type": "prompt",
             "alignment": "left",
+            "segments": [
+                {
+                    "type": "text",
+                    "style": "diamond",
+                    "leading_diamond": "\ue0c7\u2593",
+                    "foreground": "#000000",
+                    "background": "#ffea00",
+                    "properties": {
+                        "text": "",
+                        "postfix": "",
+                        "prefix": ""
+                    }
+                },
+                {
+                    "type": "kubectl",
+                    "style": "powerline",
+                    "powerline_symbol": "",
+                    "foreground": "#000000",
+                    "background": "#ffea00",
+                    "properties": {
+                        "prefix": " \uFD31",
+                        "template": " {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}}"
+                    }
+                },
+                {
+                    "type": "az",
+                    "style": "powerline",
+                    "powerline_symbol": "\uE0B0",
+                    "foreground": "#000000",
+                    "background": "#008AD7",
+                    "properties": {
+                        "display_id": false,
+                        "display_name": true,
+                        "info_separator": " @ ",
+                        "prefix": " \uFD03 "
+                    }
+                }
+            ]
+        },
+        {
+            "alignment": "left",
+            "newline": true,
             "segments": [
                 {
                     "background": "#ffff66",
@@ -276,6 +319,6 @@
     ],
     "console_title": true,
     "console_title_style": "template",
-    "console_title_template": "{{ .Shell }} in {{ .Folder }}",
+    "console_title_template": "{{if .Root}}root :: {{end}}{{.Shell}} :: {{.Folder}}",
     "final_space": true
 }
