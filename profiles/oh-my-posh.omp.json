@@ -214,19 +214,6 @@
                     "type": "shell"
                 },
                 {
-                    "background": "#1BD760",
-                    "foreground": "#111111",
-                    "invert_powerline": true,
-                    "powerline_symbol": "",
-                    "properties": {
-                        "paused_icon": " ",
-                        "playing_icon": " ",
-                        "prefix": "  "
-                    },
-                    "style": "powerline",
-                    "type": "ytm"
-                },
-                {
                     "background": "#0077c2",
                     "foreground": "#ffffff",
                     "invert_powerline": true,
@@ -234,13 +221,9 @@
                     "properties": {
                         "battery_icon": "\f583",
                         "charged_color": "#4caf50",
-                        // "charged_icon": " ",
                         "charging_color": "#40c4ff",
-                        // "charging_icon": " ",
                         "color_background": true,
                         "discharging_color": "#ff5722",
-                        // "discharging_icon": " ",
-                        // "postfix": " "
                         "postfix": "\uF295 \uf583 "
                     },
                     "style": "powerline",
