@@ -232,10 +232,15 @@
                 {
                     "background": "#2e9599",
                     "foreground": "#111111",
-                    "invert_powerline": true,
-                    "leading_diamond": "",
+                    // "invert_powerline": true,
+                    // "leading_diamond": "",
                     "style": "diamond",
-                    "trailing_diamond": "",
+                    // "trailing_diamond": "",
+                    "trailing_diamond": "\uE0B4",
+                    "leading_diamond": " \uE0B6",
+                    "properties": {
+                        "time_format": "15:04"
+                    },
                     "type": "time"
                 }
             ],
