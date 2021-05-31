@@ -2,6 +2,52 @@
     "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
     "blocks": [
         {
+            "segments": [
+                {
+                    "background": "#0077c2",
+                    "foreground": "#ffffff",
+                    "style": "diamond",
+                    "trailing_diamond": "\uE0B4",
+                    "properties": {
+                        "prefix": "<#0077c2,transparent>\uE0B6</>  "
+                    },
+                    "type": "shell"
+                },
+                {
+                    "background": "#0077c2",
+                    "foreground": "#ffffff",
+                    "invert_powerline": true,
+                    "properties": {
+                        "battery_icon": "\f583",
+                        "charged_color": "#4caf50",
+                        "charging_color": "#40c4ff",
+                        "color_background": true,
+                        "discharging_color": "#ff5722",
+                        "postfix": "\uF295 \uf583 "
+                    },
+                    "style": "diamond",
+                    "trailing_diamond": "\uE0B4",
+                    "leading_diamond": " \uE0B6",
+                    "type": "battery"
+                },
+                {
+                    "background": "#2e9599",
+                    "foreground": "#111111",
+                    "invert_powerline": true,
+                    "style": "diamond",
+                    "trailing_diamond": "\uE0B4",
+                    "leading_diamond": " \uE0B6",
+                    "properties": {
+                        "time_format": "15:04",
+                        "postfix": " \uf64f "
+                    },
+                    "type": "time"
+                }
+            ],
+            "type": "rprompt",
+            "newline": true
+        },
+        {
             "type": "prompt",
             "alignment": "left",
             "segments": [
@@ -60,11 +106,7 @@
                 {
                     "type": "os",
                     "style": "plain",
-//                    "leading_diamond": "\ue0c7\u2593",
                     "foreground": "#3A86FF",
-//                    "background": "#ffffff",
-//                    "leading_diamond": "\uE0B6",
-//                    "trailing_diamond": "\uE0B4",
                     "properties": {
                         "alpine": "\uf300",
                         "arch": "\uf303",
@@ -233,7 +275,7 @@
                     "leading_diamond": "<transparent, #2e9599>\uE0B0</>",
                     "trailing_diamond": "\uE0B4",
                     "properties": {
-                        "display_exit_code": false,
+                        "display_exit_code": true,
                         "always_enabled": true,
                         "error_color": "#f1184c",
                         "color_background": true,
@@ -244,51 +286,6 @@
             "type": "prompt"
         },
         {
-            "segments": [
-                {
-                    "background": "#0077c2",
-                    "foreground": "#ffffff",
-                    "style": "diamond",
-                    "trailing_diamond": "\uE0B4",
-                    "properties": {
-                        "prefix": "<#0077c2,transparent>\uE0B6</>  "
-                    },
-                    "type": "shell"
-                },
-                {
-                    "background": "#0077c2",
-                    "foreground": "#ffffff",
-                    "invert_powerline": true,
-                    "properties": {
-                        "battery_icon": "\f583",
-                        "charged_color": "#4caf50",
-                        "charging_color": "#40c4ff",
-                        "color_background": true,
-                        "discharging_color": "#ff5722",
-                        "postfix": "\uF295 \uf583 "
-                    },
-                    "style": "diamond",
-                    "trailing_diamond": "\uE0B4",
-                    "leading_diamond": " \uE0B6",
-                    "type": "battery"
-                },
-                {
-                    "background": "#2e9599",
-                    "foreground": "#111111",
-                    "invert_powerline": true,
-                    "style": "diamond",
-                    "trailing_diamond": "\uE0B4",
-                    "leading_diamond": " \uE0B6",
-                    "properties": {
-                        "time_format": "15:04",
-                        "postfix": " \uf64f "
-                    },
-                    "type": "time"
-                }
-            ],
-            "type": "rprompt"
-        },
-        {
             "type": "prompt",
             "alignment": "left",
             "newline": true,
@@ -296,10 +293,10 @@
                 {
                     "type": "text",
                     "style": "plain",
-                    "foreground": "#63F08C",
+                    "foreground": "#f1184c",
                     "properties": {
                         "prefix": "",
-                        "text": "\u279C"
+                        "text": "\uF7C6 \uF7C6"
                     }
                 }
             ]
