@@ -249,7 +249,9 @@
                     "foreground": "#ffffff",
                     "style": "diamond",
                     "trailing_diamond": "\uE0B4",
-                    "leading_diamond": " \uE0B6",
+                    "properties": {
+                        "prefix": "<#0077c2,transparent>\uE0B6</>  "
+                    },
                     "type": "shell"
                 },
                 {
@@ -309,10 +311,10 @@
                 {
                     "type": "text",
                     "style": "plain",
-                    "foreground": "#63F08C",
+                    "foreground": "#f1184c",
                     "properties": {
                         "prefix": "",
-                        "text": "\u279C"
+                        "text": "\uF7C6 \uF7C6"
                     }
                 }
             ]
