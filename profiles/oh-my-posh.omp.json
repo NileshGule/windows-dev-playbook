@@ -59,10 +59,12 @@
                 },
                 {
                     "type": "os",
-                    "style": "diamond",
-                    "leading_diamond": "\ue0c7\u2593",
-                    "foreground": "#26C6DA",
-                    "background": "#2f2f2f",
+                    "style": "plain",
+//                    "leading_diamond": "\ue0c7\u2593",
+                    "foreground": "#3A86FF",
+//                    "background": "#ffffff",
+//                    "leading_diamond": "\uE0B6",
+//                    "trailing_diamond": "\uE0B4",
                     "properties": {
                         "alpine": "\uf300",
                         "arch": "\uf303",
@@ -80,8 +82,7 @@
                         "ubuntu": "\uf31c",
                         "wsl": "\ue712",
                         "wsl_separator": " on ",
-                        "windows": "\ue70f",
-                        "postfix": "<#7a7a7a> \uE0b1</>"
+                        "windows": "\ue70f"
                     }
                 },
                 {
@@ -213,8 +214,8 @@
                     "type": "aws"
                 },
                 {
-                    "background": "#83769c",
-                    "foreground": "#ffffff",
+                    "foreground": "#e4e4e4",
+                    "background": "#3465a4",
                     "leading_diamond": "",
                     "properties": {
                         "always_enabled": true,
