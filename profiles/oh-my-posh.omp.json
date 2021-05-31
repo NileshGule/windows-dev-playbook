@@ -217,7 +217,6 @@
                     "background": "#0077c2",
                     "foreground": "#ffffff",
                     "invert_powerline": true,
-                    "powerline_symbol": "",
                     "properties": {
                         "battery_icon": "\f583",
                         "charged_color": "#4caf50",
@@ -226,16 +225,16 @@
                         "discharging_color": "#ff5722",
                         "postfix": "\uF295 \uf583 "
                     },
-                    "style": "powerline",
+                    "style": "diamond",
+                    "trailing_diamond": "\uE0B4",
+                    "leading_diamond": " \uE0B6",
                     "type": "battery"
                 },
                 {
                     "background": "#2e9599",
                     "foreground": "#111111",
-                    // "invert_powerline": true,
-                    // "leading_diamond": "",
+                    "invert_powerline": true,
                     "style": "diamond",
-                    // "trailing_diamond": "",
                     "trailing_diamond": "\uE0B4",
                     "leading_diamond": " \uE0B6",
                     "properties": {
