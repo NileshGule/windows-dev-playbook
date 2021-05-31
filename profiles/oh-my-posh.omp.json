@@ -182,20 +182,35 @@
                     "trailing_diamond": "",
                     "type": "executiontime"
                 },
+                // {
+                //     "background": "#2e9599",
+                //     "foreground": "#ffffff",
+                //     "leading_diamond": "",
+                //     "properties": {
+                //         "always_enabled": true,
+                //         "color_background": true,
+                //         "display_exit_code": false,
+                //         "error_color": "#f1184c",
+                //         "prefix": "<#83769c></> "
+                //     },
+                //     "style": "diamond",
+                //     "trailing_diamond": "",
+                //     "type": "exit"
+                // }
                 {
-                    "background": "#2e9599",
-                    "foreground": "#ffffff",
-                    "leading_diamond": "",
-                    "properties": {
-                        "always_enabled": true,
-                        "color_background": true,
-                        "display_exit_code": false,
-                        "error_color": "#f1184c",
-                        "prefix": "<#83769c></> "
-                    },
+                    "type": "exit",
                     "style": "diamond",
-                    "trailing_diamond": "",
-                    "type": "exit"
+                    "foreground": "#ffffff",
+                    "background": "#2e9599",
+                    "leading_diamond": "<transparent, #2e9599>\uE0B0</>",
+                    "trailing_diamond": "\uE0B4",
+                    "properties": {
+                        "display_exit_code": false,
+                        "always_enabled": true,
+                        "error_color": "#f1184c",
+                        "color_background": true,
+                        "prefix": " \uFC0C"
+                    }
                 }
             ],
             "type": "prompt"
