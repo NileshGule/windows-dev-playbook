@@ -32,6 +32,24 @@
           }
         },
         {
+          "type": "path",
+        //   "style": "diamond",
+          // "foreground": "#fafafa",
+          // "background": "#2f2f2f",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "background": "#ff479c",
+          "foreground": "#ffffff",
+          "properties": {
+            "prefix": "<#f2f200> \ue5ff </>",
+            "style": "agnoster_short",
+            "enable_hyperlink": true,
+            "home_icon": "\uf015",
+            "folder_icon": "<#B5B2C2>\ue5fe </>",
+            "folder_separator_icon": "<#B5B2C2>\ue0bf </>"
+          }
+        },
+        {
           "background": "#ff479c",
           "foreground": "#ffffff",
           "powerline_symbol": "",
