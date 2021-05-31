@@ -44,12 +44,13 @@
                     "type": "time"
                 }
             ],
-            "type": "rprompt",
-            "newline": true
+            "type": "prompt",
+            "alignment": "right"
         },
         {
             "type": "prompt",
             "alignment": "left",
+            "newline": true,
             "segments": [
                 {
                     "type": "text",
@@ -284,22 +285,6 @@
                 }
             ],
             "type": "prompt"
-        },
-        {
-            "type": "prompt",
-            "alignment": "left",
-            "newline": true,
-            "segments": [
-                {
-                    "type": "text",
-                    "style": "plain",
-                    "foreground": "#f1184c",
-                    "properties": {
-                        "prefix": "",
-                        "text": "\uF7C6 \uF7C6"
-                    }
-                }
-            ]
         },
         {
             "type": "prompt",
