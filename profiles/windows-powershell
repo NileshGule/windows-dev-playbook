@@ -5,6 +5,9 @@ Set-PoshPrompt -Theme hotstick.minimal
 #Hide username@domai
 $DefaultUser='Niles'
 
+#Helper function to clear the screen
+function cls { clear }
+
 #Helper function to change directory to developement workspace
 function cws { Set-Location C:\Nilesh\Projects }
 
