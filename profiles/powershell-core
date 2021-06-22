@@ -1,6 +1,6 @@
 Import-Module posh-git
 Import-Module oh-my-posh
-Set-PoshPrompt -Theme hotstick.minimal
+Set-PoshPrompt -Theme  ~/.oh-my-posh.omp.json
 
 #Hide username@domai
 $DefaultUser = 'Niles'
@@ -12,7 +12,6 @@ function cls { clear }
 function cws { Set-Location C:\Nilesh\Projects }
 
 Import-Module PSReadLine
-Import-Module Az.Tools.Predictor
 
 # Shows navigable menu of all options when hitting Tab
 Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
@@ -37,3 +36,6 @@ If (-Not (Test-Path Variable:PSise)) {
     Set-Alias l Get-ChildItem -option AllScope
     Set-Alias ls Get-ChildItemColorFormatWide -option AllScope
 }
+
+#kubectl aliases to improve productivity - https://github.com/shanoor/kubectl-aliases-powershell
+. $Home\Documents\PowerShell\kubectl_aliases.ps1
