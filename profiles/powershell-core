@@ -1,5 +1,7 @@
 Import-Module posh-git
 Import-Module oh-my-posh
+Import-Module git-aliases -DisableNameChecking
+
 Set-PoshPrompt -Theme  ~/.oh-my-posh.omp.json
 
 #Hide username@domai
