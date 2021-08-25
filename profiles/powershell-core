@@ -41,3 +41,19 @@ If (-Not (Test-Path Variable:PSise)) {
 
 #kubectl aliases to improve productivity - https://github.com/shanoor/kubectl-aliases-powershell
 . $Home\Documents\PowerShell\kubectl_aliases.ps1
+
+$env:PYTHONIOENCODING="utf-8"
+function fuck {
+    $history = (Get-History -Count 1).CommandLine;
+    if (-not [string]::IsNullOrWhiteSpace($history)) {
+        $fuck = $(thefuck $args $history);
+        if (-not [string]::IsNullOrWhiteSpace($fuck)) {
+            if ($fuck.StartsWith("echo")) { $fuck = $fuck.Substring(5); }
+            else { iex "$fuck"; }
+        }
+    }
+    [Console]::ResetColor() 
+}
+
+Set-Alias correct fuck -option AllScope
+
