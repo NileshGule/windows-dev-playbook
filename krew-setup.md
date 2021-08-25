@@ -1,6 +1,6 @@
 # Krew setup
 
-Krew is a kubectl plugin manager
+[Krew](https://krew.sigs.k8s.io/) is a kubectl plugin manager
 
 ## Download krew exe
 
