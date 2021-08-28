@@ -1,6 +1,7 @@
 Import-Module posh-git
 Import-Module oh-my-posh
 Import-Module git-aliases -DisableNameChecking
+Import-Module PSKubectlCompletion
 
 Set-PoshPrompt -Theme  ~/.oh-my-posh.omp.json
 
@@ -56,4 +57,3 @@ function fuck {
 }
 
 Set-Alias correct fuck -option AllScope
-
