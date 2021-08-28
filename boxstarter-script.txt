@@ -68,7 +68,6 @@ cinst -y skaffold  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolat
 cinst -y terraform  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 cinst -y treesize  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 cinst -y telegram.install  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
-cinst -y todobackup  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 cinst -y todoist  --cacheLocation "$env:userprofile\AppData\Local\Temp\chocolatey"
 
 
