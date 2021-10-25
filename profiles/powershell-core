@@ -30,16 +30,6 @@ Set-PSReadLineOption -PredictionSource HistoryAndPlugin
 #Set the color for Prediction (auto-suggestion)
 Set-PSReadlineOption -Colors @{InlinePrediction = [ConsoleColor]::DarkGreen }
 
-Import-Module Get-ChildItemColor
-
-If (-Not (Test-Path Variable:PSise)) {
-    # Only run this in the console and not in the ISE
-    Import-Module Get-ChildItemColor
-    
-    Set-Alias l Get-ChildItem -option AllScope
-    Set-Alias ls Get-ChildItemColorFormatWide -option AllScope
-}
-
 #kubectl aliases to improve productivity - https://github.com/shanoor/kubectl-aliases-powershell
 . $Home\Documents\PowerShell\kubectl_aliases.ps1
 
