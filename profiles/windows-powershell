@@ -22,7 +22,13 @@ Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 
 Set-PSReadLineOption -ShowToolTips
-#Set-PSReadLineOption -PredictionSource History
+# Set-PSReadLineOption -PredictionSource HistoryAndPlugin
+Set-PSReadLineOption -PredictionSource History
+Set-PSReadLineOption -PredictionViewStyle ListView
+Set-PSReadLineOption -EditMode Windows
+
+#Set the color for Prediction (auto-suggestion)
+Set-PSReadlineOption -Colors @{InlinePrediction = [ConsoleColor]::DarkGreen }
 
 Import-Module Get-ChildItemColor
 
