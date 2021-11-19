@@ -3,7 +3,9 @@ Import-Module oh-my-posh
 Import-Module git-aliases -DisableNameChecking
 Import-Module PSKubectlCompletion
 
+
 Set-PoshPrompt -Theme  ~/.oh-my-posh.omp.json
+
 
 #Hide username@domai
 $DefaultUser = 'Niles'
@@ -14,7 +16,7 @@ function cls { clear }
 #Helper function to change directory to developement workspace
 function cws { Set-Location C:\Nilesh\Projects }
 
-Import-Module PSReadLine
+#Import-Module PSReadLine
 
 # Shows navigable menu of all options when hitting Tab
 Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
@@ -25,10 +27,15 @@ Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 
 Set-PSReadLineOption -ShowToolTips
-Set-PSReadLineOption -PredictionSource HistoryAndPlugin
+# Set-PSReadLineOption -PredictionSource HistoryAndPlugin
+Set-PSReadLineOption -PredictionSource History
+Set-PSReadLineOption -PredictionViewStyle ListView
+Set-PSReadLineOption -EditMode Windows
 
 #Set the color for Prediction (auto-suggestion)
 Set-PSReadlineOption -Colors @{InlinePrediction = [ConsoleColor]::DarkGreen }
+
+#Install-Module -Name PSReadLine -RequiredVersion 2.2.0-beta4 -AllowPrerelease
 
 #kubectl aliases to improve productivity - https://github.com/shanoor/kubectl-aliases-powershell
 . $Home\Documents\PowerShell\kubectl_aliases.ps1
@@ -47,3 +54,6 @@ function fuck {
 }
 
 Set-Alias correct fuck -option AllScope
+
+Import-Module -Name Terminal-Icons
+
